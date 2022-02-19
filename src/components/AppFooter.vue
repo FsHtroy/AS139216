@@ -2,7 +2,7 @@
   <CFooter>
     <div>
       &copy; {{ new Date().getFullYear() }}
-      <a href="https://139216.network">AS139216</a> Htroy Network Research Limited - We are using:Mikrotik | <CIcon :icon="cibDell"/> | <CIcon :icon="cibHuawei"/> | <CIcon :icon="cibDell"/> | <CIcon :icon="cibIntel"/> | <CIcon :icon="cibCloudflare"/>
+      <a href="https://139216.network">AS139216</a> Htroy Network Research Limited - We are using:Mikrotik | <CIcon :icon="cibDell"/> | <CIcon :icon="cibHuawei"/> | <CIcon :icon="cibCisco"/> | <CIcon :icon="cibIntel"/> | <CIcon :icon="cibCloudflare"/>
     </div>
     <div class="ms-auto">
       <span class="me-1" target="_blank">This web is powered by <CIcon :icon="cibCoreuiC" size=""/></span> | <a href="https://coreui.io/vue"> &copy; {{ new Date().getFullYear() }} creativeLabs.</a>

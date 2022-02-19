@@ -13,10 +13,10 @@
   >
     <CSidebarBrand @click="$router.push('/')">Htroy Research Network</CSidebarBrand>
     <AppSidebarNav />
-<!--    <CSidebarToggler-->
-<!--      class="d-none d-lg-flex"-->
-<!--      @click="$store.commit('toggleUnfoldable')"-->
-<!--    />-->
+    <CSidebarToggler
+      class="d-none d-lg-flex"
+      @click="$store.commit('toggleUnfoldable')"
+    />
   </CSidebar>
 </template>
 

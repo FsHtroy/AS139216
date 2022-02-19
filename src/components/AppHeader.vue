@@ -4,6 +4,9 @@
       <CHeaderToggler class="ps-1" @click="$store.commit('toggleSidebar')">
         <CIcon icon="cil-menu" size="lg" />
       </CHeaderToggler>
+      <CHeaderBrand class="mx-auto d-lg-none" to="/">
+        Htroy Research Network
+      </CHeaderBrand>
       <CHeaderNav class="d-none d-md-flex me-auto">
         <CNavItem>
           <CCardText>Welcome to Htroy Research Network's HomePage - AS:139216 <CIcon :icon="cifCn" size=""/></CCardText>
