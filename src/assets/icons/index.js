@@ -23,6 +23,8 @@ import {
   cibCcPaypal,
   cibCcApplePay,
   cibCcAmex,
+  cibDell,
+  cibCloudflare
 } from '@coreui/icons'
 import { cifUs, cifBr, cifIn, cifFr, cifEs, cifPl } from '@coreui/icons'
 import {
@@ -77,6 +79,13 @@ import {
   cilUserFemale,
   cilUserFollow,
   cilXCircle,
+  cilLink,
+  cilCloudUpload,
+  cilSwapHorizontal,
+  cilContact,
+  cilSitemap,
+  cilExternalLink
+
 } from '@coreui/icons'
 
 export const iconsSet = Object.assign(
@@ -133,6 +142,13 @@ export const iconsSet = Object.assign(
     cilUserFemale,
     cilUserFollow,
     cilXCircle,
+    cilLink,
+    cilCloudUpload,
+    cilSwapHorizontal,
+    cilContact,
+    cilSitemap,
+    cilExternalLink
+
   },
   {
     cifUs,
@@ -167,5 +183,7 @@ export const iconsSet = Object.assign(
     cibCcPaypal,
     cibCcApplePay,
     cibCcAmex,
+    cibDell,
+    cibCloudflare
   },
 )

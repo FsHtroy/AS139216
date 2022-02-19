@@ -1,20 +1,33 @@
 <template>
   <CFooter>
     <div>
-      <a href="https://coreui.io" target="_blank">CoreUI</a>
-      <span class="ms-1"
-        >&copy; {{ new Date().getFullYear() }} creativeLabs.</span
-      >
+      &copy; {{ new Date().getFullYear() }}
+      <a href="https://139216.network">AS139216</a> Htroy Network Research Limited - We are using:Mikrotik | <CIcon :icon="cibDell"/> | <CIcon :icon="cibHuawei"/> | <CIcon :icon="cibDell"/> | <CIcon :icon="cibIntel"/> | <CIcon :icon="cibCloudflare"/>
     </div>
     <div class="ms-auto">
-      <span class="me-1" target="_blank">Powered by</span>
-      <a href="https://coreui.io/vue">CoreUI for Vue</a>
+      <span class="me-1" target="_blank">This web is powered by <CIcon :icon="cibCoreuiC" size=""/></span> | <a href="https://coreui.io/vue"> &copy; {{ new Date().getFullYear() }} creativeLabs.</a>
     </div>
   </CFooter>
 </template>
 
 <script>
+import { CIcon } from '@coreui/icons-vue';
+import { cibDell,cibCisco,cibHuawei,cibCoreuiC,cibCloudflare,cibIntel } from '@coreui/icons';
+
 export default {
   name: 'AppFooter',
+  components: {
+    CIcon
+  },
+  setup() {
+    return {
+      cibDell,
+      cibCisco,
+      cibHuawei,
+      cibCoreuiC,
+      cibCloudflare,
+      cibIntel
+    }
+  }
 }
 </script>

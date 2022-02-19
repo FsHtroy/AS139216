@@ -81,51 +81,51 @@ const AppSidebarNav = defineComponent({
 
       return item.to
         ? h(
-            RouterLink,
-            {
-              to: item.to,
-              custom: true,
-            },
-            {
-              default: (props) =>
-                h(
-                  resolveComponent(item.component),
-                  {
-                    active: props.isActive,
-                    href: props.href,
-                    onClick: () => props.navigate(),
-                  },
-                  {
-                    default: () => [
-                      item.icon &&
-                        h(resolveComponent('CIcon'), {
-                          customClassName: 'nav-icon',
-                          name: item.icon,
-                        }),
-                      item.name,
-                      item.badge &&
-                        h(
-                          CBadge,
-                          {
-                            class: 'ms-auto',
-                            color: item.badge.color,
-                          },
-                          {
-                            default: () => item.badge.text,
-                          },
-                        ),
-                    ],
-                  },
-                ),
-            },
-          )
+          RouterLink,
+          {
+            to: item.to,
+            custom: true,
+          },
+          {
+            default: (props) =>
+              h(
+                resolveComponent(item.component),
+                {
+                  active: props.isActive,
+                  href: props.href,
+                  onClick: () => props.navigate(),
+                },
+                {
+                  default: () => [
+                    item.icon &&
+                    h(resolveComponent('CIcon'), {
+                      customClassName: 'nav-icon',
+                      name: item.icon,
+                    }),
+                    item.name,
+                    item.badge &&
+                    h(
+                      CBadge,
+                      {
+                        class: 'ms-auto',
+                        color: item.badge.color,
+                      },
+                      {
+                        default: () => item.badge.text,
+                      },
+                    ),
+                  ],
+                },
+              ),
+          },
+        )
         : h(
-            resolveComponent(item.component),
-            {},
-            {
-              default: () => item.name,
-            },
-          )
+          resolveComponent(item.component),
+          {},
+          {
+            default: () => item.name,
+          },
+        )
     }
 
     return () =>

@@ -21,6 +21,9 @@
   "config": {
     "coreui_library_short_version": "4.1"
   },
+  "eslint-config": {
+    "vue/no-unused-components":"off"
+  },
   "dependencies": {
     "@coreui/chartjs": "^3.0.0",
     "@coreui/coreui": "^4.1.0",
@@ -32,7 +35,8 @@
     "core-js": "^3.19.0",
     "vue": "^3.2.23",
     "vue-router": "^4.0.12",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

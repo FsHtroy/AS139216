@@ -11,23 +11,12 @@
         })
     "
   >
-    <CSidebarBrand>
-      <CIcon
-        custom-class-name="sidebar-brand-full"
-        :icon="logoNegative"
-        :height="35"
-      />
-      <CIcon
-        custom-class-name="sidebar-brand-narrow"
-        :icon="sygnet"
-        :height="35"
-      />
-    </CSidebarBrand>
+    <CSidebarBrand @click="$router.push('/')">Htroy Research Network</CSidebarBrand>
     <AppSidebarNav />
-    <CSidebarToggler
-      class="d-none d-lg-flex"
-      @click="$store.commit('toggleUnfoldable')"
-    />
+<!--    <CSidebarToggler-->
+<!--      class="d-none d-lg-flex"-->
+<!--      @click="$store.commit('toggleUnfoldable')"-->
+<!--    />-->
   </CSidebar>
 </template>
 
